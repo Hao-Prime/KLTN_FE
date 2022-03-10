@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  
     <!-- Thư viên  -->
     <link href="/assets/CSS/noidungtitle.css" rel="stylesheet">
     <title>Trang Chủ</title>
@@ -37,31 +37,24 @@
       height: 250px;
      }
       </style>
-</head>
-<body style="max-width: 1560px;">
-    <div style="background-color: rgb(240, 240, 144);">
-        <div class="container-fluid" style="background-color: rgb(243, 243, 243);">
-           <!-- xxxxxxxxxxx -->
-            <div class="row justify-content-center">
-              <div class="col-12" style="text-align: center;">
-                <a href="/CoSoVatChat.html">CSVC</a>
-                <a href="/TaiSaoChonChungToi.html">TSCCT</a>
-                <a href="/DichVu.html">DV</a>
-                <a href="/ChuyenKhoa.html">ChuyenKhoa</a>
-                <a href="/DoiNguBacSi.html"> Đội ngủ bác sĩ</a>
-                <a href="/HuongDan.html">Hướng dẫn </a>
-                <a href="/Footer.html">Footer </a>
-                <a href="/Form-NhapThongTin.html">Đăng ký khám</a>
-                <a href="/DangNhap.html">Đăng nhập</a>
-                <a href="/XemLich.html">Xem Lịch</a>
-                <a href="/CapNhatThongTinCaNhan.html">Cập nhật thông tin</a>
-              </div>
-              
+        <link rel="icon" href="assets/images/GiaoDien/logo1.png" type="image/gif" sizes="16x16">
+
+        <!-- Thư viện css -->
+        <link href="./assets/CSS/TrangChu.css" rel="stylesheet"/>
+        
+        <!-- thư viên include -->
+         <script src="https://unpkg.com/htmlincludejs"></script>
+         
+    </head>
+    <body>
+        <div >
+            <div>
+                <include src="Header.html"></include>
             </div>
             <!-- vô từ phần này CSVC -->
-            <div class="row">
+            <div class="row pt-3 pb-3">
               <div class="col-12">
-                <p class="p-title p-title-khoa">CHUYÊN KHOA: Cơ - Xương - Khớp</p>
+                <p class="title1">CHUYÊN KHOA: Cơ - Xương - Khớp</p>
               </div>
               <div class="col-lg-4 col-sm-6 mb-4 col-tab-dv ">
                 <div class="div-img">
@@ -121,8 +114,12 @@
             </div>
            
              <!-- vô từ phần này CSVC -->
+             <div>
+              <include src="Footer.html"></include>
+         </div>
+
       </div>
-    </div>
-    
-</body>
+     
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
